@@ -1,0 +1,47 @@
+Respostas das questões 1,3 e 4.
+
+
+1)Observe o trecho de código abaixo:
+
+int INDICE = 13, SOMA = 0, K = 0;
+enquanto K < INDICE faça
+{
+K = K + 1;
+SOMA = SOMA + K;
+}
+imprimir(SOMA);
+
+RESPOSTA: O valor final da variável SOMA será 91.
+
+/--------------------------------------------------------\
+
+3) Descubra a lógica e complete o próximo elemento:
+
+a) 1, 3, 5, 7, _R:9_                    (+2 a cada número).
+b) 2, 4, 8, 16, 32, 64, __R:128__       (Número anterior vezes dois).
+c) 0, 1, 4, 9, 16, 25, 36, __R:49__     (O número do elemento é resultado da sua posição na fila(começando em 0) ao quadrado, ex: 0^2=0, 1^2=1, 2^2=4...).
+d) 4, 16, 36, 64, __R:100__             (Resultado do sequência de números pares elevado ao quadrado, 2x2,4x4,6x6,8x8 e 10x10 = 100).
+e) 1, 1, 2, 3, 5, 8, __R:13__           (Resultado do último número mais seu antecessor).
+f) 2,10, 12, 16, 17, 18, 19, _R200__    (Não estou certo desta resposta, mas seria porque todas começam com D?).
+
+/--------------------------------------------------------\
+
+4) Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma
+velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual
+estará mais próximo a cidade de Ribeirão Preto?
+
+IMPORTANTE:
+a) Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca.
+b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)
+c) Explique como chegou no resultado.
+
+RESPOSTA: 
+Depende, se for em questão de distância(km), ao se cruzarem na rodovia, AMBOS estarão a mesma distância da cidade de Ribeirão Preto, independentemente dos obstáculos de cada um. 
+
+Mas se for analisado o tempo de viagem, caso o carro precisasse voltar, o carro estará mais próximo. 
+Para isso é necessário determinar o ponto de encontro na rodovia, calcular a distância de ambos para a cidade de Ribeirão Preto, realizar o cálculo da equação horária, 
+a velocidade média e posteriormente adicionando os tempos dos obstáculos teremos o tempo de viagem de cada um. 
+
+Realizando o cálculo, temos que o ponto de encontro acontece a 60,9km da cidade de Ribeirão Preto. Caso, o carro tivesse que voltar e competir com o caminhão para saber quem 
+chegaria mais rápido. É possível comparar as velocidades médias de cada um, já que são constantes. O carro possui velocidade de 110km/h, sem paradas. Já o caminhão, 
+com as paradas de 10min totais, possuirá uma velocidade média de 70,6km/h, chegando posteriormente ao carro.

@@ -1,0 +1,30 @@
+//2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores
+//(exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número,
+//ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+//IMPORTANTE:
+//Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+
+void main() {
+  final int numeroAVerificar = 35;
+
+  verificaSequencia(numeroAVerificar);
+}
+
+void verificaSequencia(int numeroAVerificar) {
+  List<int> listaFibonacci = [0, 1];
+  int i = 1;
+
+  while (listaFibonacci[i] <= numeroAVerificar) {
+    int proximo = listaFibonacci[i] + listaFibonacci[i - 1];
+    listaFibonacci.add(proximo);
+    i++;
+  }
+
+  if (listaFibonacci.contains(numeroAVerificar)) {
+    return print(
+        "O número $numeroAVerificar pertence a sequência de Fibonacci.");
+  } else {
+    return print(
+        "O número $numeroAVerificar NÃO pertence a sequência de Fibonacci.");
+  }
+}
